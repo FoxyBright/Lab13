@@ -13,22 +13,23 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.lab13.R;
-import com.example.lab13.databinding.FragmentGalleryBinding;
+import com.example.lab13.databinding.FragmentNewsecretchatBinding;
 
 public class GalleryFragment extends Fragment {
 
     private GalleryViewModel galleryViewModel;
-    private FragmentGalleryBinding binding;
+    private FragmentNewsecretchatBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         galleryViewModel =
                 new ViewModelProvider(this).get(GalleryViewModel.class);
 
-        binding = FragmentGalleryBinding.inflate(inflater, container, false);
+        binding = FragmentNewsecretchatBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textGallery;
+
+        final TextView textView = binding.textView2;
         galleryViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {

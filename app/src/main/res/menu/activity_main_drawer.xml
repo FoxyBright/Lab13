@@ -3,18 +3,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single">
+    <group
+        android:id="@+id/allnew"
+        android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_home" />
+            android:id="@+id/newGroup"
+            android:icon="@drawable/group"
+            android:title="@string/newGroup" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
+            android:id="@+id/NewSecretChat"
+            android:icon="@drawable/send"
+            android:title="@string/NewSecretChat" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:id="@+id/NewChanel"
+            android:icon="@drawable/pen"
+            android:title="@string/NewChanel" />
+    </group>
+
+    <group android:id="@+id/user"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/contact"
+            android:icon="@drawable/cont"
+            android:title="@string/contact" />
+        <item
+            android:id="@+id/Like"
+            android:icon="@drawable/star"
+            android:title="@string/Like" />
+        <item
+            android:id="@+id/Call"
+            android:icon="@drawable/call"
+            android:title="@string/Call" />
+        <item
+            android:id="@+id/addPerson"
+            android:icon="@drawable/add"
+            android:title="@string/addPerson" />
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/set"
+            android:title="@string/action_settings" />
     </group>
 </menu>

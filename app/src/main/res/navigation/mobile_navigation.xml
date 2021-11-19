@@ -3,23 +3,48 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/newGroup">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.example.lab13.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
-
-    <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.lab13.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
-
-    <fragment
-        android:id="@+id/nav_slideshow"
+        android:id="@+id/addPerson"
         android:name="com.example.lab13.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:label="@string/addPerson"
+        tools:layout="@layout/fragment_addperson" />
+    <fragment
+        android:id="@+id/settings"
+        android:name="com.example.lab13.ui.slideshow.SlideshowFragment"
+        android:label="@string/action_settings"
+        tools:layout="@layout/fragment_setting" />
+    <fragment
+        android:id="@+id/newGroup"
+        android:name="com.example.lab13.ui.home.HomeFragment"
+        android:label="@string/newGroup"
+        tools:layout="@layout/fragment_newgroup" />
+
+    <fragment
+        android:id="@+id/NewSecretChat"
+        android:name="com.example.lab13.ui.gallery.GalleryFragment"
+        android:label="@string/NewSecretChat"
+        tools:layout="@layout/fragment_newsecretchat" />
+
+    <fragment
+        android:id="@+id/NewChanel"
+        android:name="com.example.lab13.ui.slideshow.SlideshowFragment"
+        android:label="@string/NewChanel"
+        tools:layout="@layout/fragment_newchanel" />
+    <fragment
+        android:id="@+id/Like"
+        android:name="com.example.lab13.ui.home.HomeFragment"
+        android:label="@string/Like"
+        tools:layout="@layout/fragment_like" />
+    <fragment
+        android:id="@+id/contact"
+        android:name="com.example.lab13.ui.gallery.GalleryFragment"
+        android:label="@string/contact"
+        tools:layout="@layout/fragment_contact" />
+    <fragment
+        android:id="@+id/Call"
+        android:name="com.example.lab13.ui.slideshow.SlideshowFragment"
+        android:label="@string/Call"
+        tools:layout="@layout/fragment_call" />
 </navigation>
